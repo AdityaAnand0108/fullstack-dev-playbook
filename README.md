@@ -19,16 +19,21 @@ This repo contains:
 
 ---
 
-## 🧠 Month 1 – Advanced React Mastery
+# 🧠 Month 1 – Advanced React + JavaScript Mastery  
 
-**Goal:** Deep dive into React internals, performance, hooks, and architecture.
+> 🎯 **Goal:** Deep dive into React internals, hooks, performance optimization, and architecture — while mastering modern JavaScript fundamentals used behind React.
 
-✅ Topics  
-- `useReducer`, `useMemo`, `useCallback`, `useRef`, `useImperativeHandle`  
-- Context API vs Redux Toolkit  
-- React Query (TanStack) + Optimistic Updates  
-- Lazy Loading & Code Splitting  
-- Jest + React Testing Library  
+---
+
+## 🚀 Overview
+
+This repository documents my **Month 1 Full Stack Developer Learning Journey**,  
+focused on **Advanced React** concepts and **JavaScript mastery**.
+
+- ⚛️ Advanced React (Hooks, State Management, React Query)
+- 💛 JavaScript Core (Closures, Async, Performance)
+- 🧩 Weekly mini-projects to solidify learning
+- 🧠 Focus on performance, testing, and clean architecture  
 
 🧩 Mini-Projects  
 - **Custom Hooks Playground**  
