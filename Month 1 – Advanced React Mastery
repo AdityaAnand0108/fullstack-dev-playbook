@@ -1,1 +1,128 @@
 
+# 🧠 Month 1 – Advanced React + JavaScript Mastery  
+
+> 🎯 **Goal:** Deep dive into React internals, hooks, performance optimization, and architecture — while mastering modern JavaScript fundamentals used behind React.
+
+---
+
+## 🚀 Overview
+
+This repository documents my **Month 1 Full Stack Developer Learning Journey**,  
+focused on **Advanced React** concepts and **JavaScript mastery**.
+
+- ⚛️ Advanced React (Hooks, State Management, React Query)
+- 💛 JavaScript Core (Closures, Async, Performance)
+- 🧩 Weekly mini-projects to solidify learning
+- 🧠 Focus on performance, testing, and clean architecture
+
+---
+
+## 🗓️ Weekly Breakdown
+
+### 📅 **Week 1: Advanced Hooks + JS Internals**
+**React Topics:**
+- `useReducer`, `useMemo`, `useCallback`, `useRef`, `useImperativeHandle`
+
+**JavaScript Topics:**
+- Closures, Scope Chain, Hoisting, Execution Context
+
+**Mini Project:**
+> 🎓 Student Filter Dashboard  
+Uses `useReducer` for state transitions and `useRef` for modal handling.
+
+---
+
+### 📅 **Week 2: Context API vs Redux Toolkit + Advanced JS**
+**React Topics:**
+- Context API  
+- Redux Toolkit (`createSlice`, `configureStore`, `useDispatch`, `useSelector`)  
+- Context vs Redux comparison
+
+**JavaScript Topics:**
+- Array methods (`map`, `filter`, `reduce`), Destructuring, Spread/Rest  
+- Map, Set, Optional Chaining
+
+**Mini Project:**
+> 📘 Course Enrollment Dashboard  
+Implemented in both Context API and Redux Toolkit.
+
+---
+
+### 📅 **Week 3: React Query + Async JS**
+**React Topics:**
+- React Query (TanStack)  
+- Query & Mutation Hooks  
+- Optimistic UI Updates  
+- Caching, Refetching, and Pagination
+
+**JavaScript Topics:**
+- Promises, async/await  
+- Fetch API, API chaining, error handling  
+
+**Mini Project:**
+> 🔄 Student Management App  
+React Query + Mock API with optimistic updates.
+
+---
+
+### 📅 **Week 4: Performance + Testing + Advanced JS**
+**React Topics:**
+- Lazy Loading + Code Splitting (`React.lazy`, `Suspense`)
+- Jest + React Testing Library
+- Component Testing, Mock APIs
+
+**JavaScript Topics:**
+- Event Loop, Debouncing, Throttling  
+- Modules (import/export), Memory Optimization  
+
+**Mini Project:**
+> ⚡ Student Admin Panel  
+Lazy-loaded routes + tested components with Jest + RTL.
+
+---
+
+## 🧰 Tech Stack
+
+| Category | Technology |
+|-----------|-------------|
+| Frontend | React.js, Material UI, React Query, Redux Toolkit |
+| Language | JavaScript (ES6+) |
+| Testing | Jest, React Testing Library |
+| Tools | Git, GitHub, Postman, Chrome DevTools |
+| Deployment | Netlify / Vercel |
+
+---
+
+## 📈 Learning Outcomes
+
+✅ Deep understanding of React internals & architecture  
+✅ Strong command over modern JavaScript features  
+✅ Experience with React Query & Redux Toolkit  
+✅ Optimized React performance with memoization & lazy loading  
+✅ Wrote and tested production-level React code  
+
+---
+
+## 🧩 Projects Built This Month
+
+| Project | Description | Key Topics |
+|----------|--------------|-------------|
+| 🎓 Student Filter Dashboard | useReducer + useRef + useMemo | Advanced Hooks |
+| 📘 Course Enrollment Dashboard | Context API vs Redux Toolkit | State Management |
+| 🔄 Student Management App | React Query + Optimistic Updates | Data Fetching |
+| ⚡ Student Admin Panel | Lazy Loading + Jest Testing | Performance + Testing |
+
+---
+
+## 🧠 JavaScript Concepts Covered
+
+- Execution Context, Hoisting, Closures  
+- Async JavaScript (Promises, async/await)  
+- Array & Object manipulation  
+- Event Loop, Debouncing, Throttling  
+- ES6+ Features (Destructuring, Spread, Modules)  
+
+---
+
+## 🗂️ Folder Structure
+
