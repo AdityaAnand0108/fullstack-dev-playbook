@@ -1,0 +1,21 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
+/idea_http_requests.json
+# User-specific files
+/usage.statistics.xml
+/jetbrains-toolbox.json
+# Sensitive or high-churn files
+/credentials.xml
+/sshConfigs.xml
+/other.xml
+/dictionaries/
+# OS-specific files
+.DS_Store
+Thumbs.db
+# Project-specific files
+fullstack-dev-playbook.iml
+
+

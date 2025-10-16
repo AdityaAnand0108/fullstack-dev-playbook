@@ -12,7 +12,7 @@ console.log(str1 == str1.split("").reverse().join(""));
 const str2 = "hello world";
 let vowels = 0, consonants = 0;
 for (let c of str2.toLowerCase()) {
-    if (/[a-z]/.test(c)) {
+    if (c != " "){
         if ("aeiou".includes(c)) vowels++;
         else consonants++;
     }
