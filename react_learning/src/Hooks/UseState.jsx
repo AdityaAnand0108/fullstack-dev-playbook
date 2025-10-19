@@ -1,7 +1,6 @@
-
 /*Simple Counter
  1. Build a Counter component that displays a number and two buttons: Increment and Decrement. Use useState to store the count (start at 0). 
- Clicking the buttons should increase or decrease the displayed number by 1.
+ Clicking the buttons should increase or decrease the displayed number by 1. - Done
 
 2.Toggle Visibility
 Create a ToggleMessage component that shows a short message (e.g., “Hello!”) only when a button labeled Show / Hide is toggled. 
@@ -23,29 +22,37 @@ When the user types text and clicks Add, append the text to the array and render
 import { useState } from "react";
 
 function Usestate() {
+  const name = "Aditya";
+  const show = "SHOW / HIDE";
 
-   let [counter , setCounter] = useState(20);
+  let [counter, setCounter] = useState(0);
+  let [toggle, setToggle] = useState(false);
 
-   const Addvalue= ()=>{
+  const Addvalue = () => {
     setCounter(counter + 1);
-    console.log(counter)
-   }
+    console.log(counter);
+  };
 
-   const Removevalue= ()=>{
+  const Removevalue = () => {
     setCounter(counter - 1);
-    console.log(counter)
-   }
-    
+    console.log(counter);
+  };
 
-    return(
-        
-        <>
-        <h1>Use State current counter value : {counter}</h1>
-        <button onClick={Addvalue}>ADD VALUE</button>
-        <br />
-        <button onClick={Removevalue}>REMOVE VALUE</button>
-        </>
-        )
-    }
+  const Messagedisplay = () => {
+    setToggle(!toggle);
+    console.log(toggle);
+  };
 
-    export default Usestate;
+  return (
+    <>
+      <h1>Use State current counter value : {counter}</h1>
+      <button onClick={Addvalue}>ADD VALUE</button>
+      <br />
+      <button onClick={Removevalue}>REMOVE VALUE</button>
+      <button onClick={Messagedisplay}>{show}</button>
+      {toggle && <h1>Hello my name is {name}</h1>}
+    </>
+  );
+}
+
+export default Usestate;
