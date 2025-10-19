@@ -38,6 +38,10 @@ function Usestate() {
     console.log(counter);
   };
 
+  const Intialvalue = () =>{
+    setCounter(0);
+  }
+
   const Messagedisplay = () => {
     setToggle(!toggle);
     console.log(toggle);
@@ -49,6 +53,7 @@ function Usestate() {
       <button onClick={Addvalue}>ADD VALUE</button>
       <br />
       <button onClick={Removevalue}>REMOVE VALUE</button>
+      <button onClick={Intialvalue}>RESET THE COUNTER</button>
       <button onClick={Messagedisplay}>{show}</button>
       {toggle && <h1>Hello my name is {name}</h1>}
     </>
