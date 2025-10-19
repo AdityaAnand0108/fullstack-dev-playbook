@@ -1,4 +1,4 @@
-import Usestate from "./Hooks/UseState";
+import Usestate from "./Hooks/UseStateSimple";
 function App() {
 
   return (
