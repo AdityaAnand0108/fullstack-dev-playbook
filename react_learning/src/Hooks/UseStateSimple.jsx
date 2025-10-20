@@ -42,6 +42,8 @@ function Usestate() {
 
   const Intialvalue = () =>{
     setCounter(0);
+    setInputValue("");
+    setToggle(false);
   }
 
   const Messagedisplay = () => {
@@ -55,15 +57,16 @@ function Usestate() {
 
   return (
     <>
-      <h1>Use State current counter value : {counter}</h1>
-      <button onClick={Addvalue}>ADD VALUE</button>
+      <h1 className=" p-4 m-4">Use State current counter value : {counter}</h1>
+      <button className=" p-4 m-4 rounded-4xl" onClick={Addvalue}>ADD VALUE</button>
+      <button className=" p-4 m-4 rounded-4xl" onClick={Removevalue}>REMOVE VALUE</button>
       <br />
-      <button onClick={Removevalue}>REMOVE VALUE</button>
-      <button onClick={Intialvalue}>RESET THE COUNTER</button>
-      <button onClick={Messagedisplay}>{show}</button>
-      {toggle && <h1>Hello my name is {name}</h1>}
-      <input type="text" placeholder="Enter the list here" onChange={(e) => ReverseString(e.target.value)}></input>
-      <h1>{inputValue}</h1>
+      <button className=" p-4 m-4 rounded-4xl" onClick={Intialvalue}>RESET THE COUNTER</button>
+      <br />
+      <button className=" p-4 m-4 rounded-4xl" onClick={Messagedisplay}>{show}</button>
+      {toggle && <h1 className=" p-4 m-4">Hello my name is {name}</h1>}
+      <input className=" p-4 m-4" type="text" placeholder="Enter the list here" onChange={(e) => ReverseString(e.target.value)}></input>
+      <h1 className=" p-4 m-4">{inputValue}</h1>
     </>
   );
 }

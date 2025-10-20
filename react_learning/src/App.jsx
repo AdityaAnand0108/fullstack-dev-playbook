@@ -3,7 +3,6 @@ function App() {
 
   return (
     <>
-      <h1>Aditya Anand Mishra</h1>
       < Usestate />
     </>
   )
