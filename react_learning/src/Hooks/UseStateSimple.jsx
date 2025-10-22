@@ -31,8 +31,7 @@ function Usestate() {
 
   const Addvalue = () => {
     setCounter(counter + 1);
-    name.
-    console.log(counter);
+    name.console.log(counter);
   };
 
   const Removevalue = () => {
@@ -40,11 +39,11 @@ function Usestate() {
     console.log(counter);
   };
 
-  const Intialvalue = () =>{
+  const Intialvalue = () => {
     setCounter(0);
     setInputValue("");
     setToggle(false);
-  }
+  };
 
   const Messagedisplay = () => {
     setToggle(!toggle);
@@ -52,20 +51,33 @@ function Usestate() {
   };
 
   const ReverseString = (inputValue) => {
-    setInputValue(inputValue.split("").reverse().join(""))
-  }
+    setInputValue(inputValue.split("").reverse().join(""));
+  };
 
   return (
     <>
       <h1 className=" p-4 m-4">Use State current counter value : {counter}</h1>
-      <button className=" p-4 m-4 rounded-4xl" onClick={Addvalue}>ADD VALUE</button>
-      <button className=" p-4 m-4 rounded-4xl" onClick={Removevalue}>REMOVE VALUE</button>
+      <button className=" p-4 m-4 rounded-4xl" onClick={Addvalue}>
+        ADD VALUE
+      </button>
+      <button className=" p-4 m-4 rounded-4xl" onClick={Removevalue}>
+        REMOVE VALUE
+      </button>
       <br />
-      <button className=" p-4 m-4 rounded-4xl" onClick={Intialvalue}>RESET THE COUNTER</button>
+      <button className=" p-4 m-4 rounded-4xl" onClick={Intialvalue}>
+        RESET THE COUNTER
+      </button>
       <br />
-      <button className=" p-4 m-4 rounded-4xl" onClick={Messagedisplay}>{show}</button>
+      <button className=" p-4 m-4 rounded-4xl" onClick={Messagedisplay}>
+        {show}
+      </button>
       {toggle && <h1 className=" p-4 m-4">Hello my name is {name}</h1>}
-      <input className=" p-4 m-4" type="text" placeholder="Enter the list here" onChange={(e) => ReverseString(e.target.value)}></input>
+      <input
+        className=" p-4 m-4"
+        type="text"
+        placeholder="Enter the list here"
+        onChange={(e) => ReverseString(e.target.value)}
+      ></input>
       <h1 className=" p-4 m-4">{inputValue}</h1>
     </>
   );
