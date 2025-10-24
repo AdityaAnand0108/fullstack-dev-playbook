@@ -24,7 +24,12 @@ function PasswordGenerator() {
 
   useEffect(() => {
     generatedPasswordfn();
-  }, [passwordLength, includeNumbers, includeSpecialChars, generatedPasswordfn]);
+  }, [
+    passwordLength,
+    includeNumbers,
+    includeSpecialChars,
+    generatedPasswordfn,
+  ]);
 
   return (
     <>
@@ -57,7 +62,7 @@ function PasswordGenerator() {
               checked={includeNumbers}
               onChange={(e) => setIncludeNumbers(e.target.checked)}
             />
-            <label className="text-xl">Include Numbers</label>
+            <label className="text-2xl font-mono font-bold">Include Numbers</label>
           </div>
           <div>
             <input
@@ -66,7 +71,7 @@ function PasswordGenerator() {
               checked={includeSpecialChars}
               onChange={(e) => setIncludeSpecialChars(e.target.checked)}
             />
-            <label className="text-xl">Include Special Characters</label>
+            <label className="text-2xl font-mono font-bold">Include Special Characters</label>
           </div>
         </div>
       </div>
