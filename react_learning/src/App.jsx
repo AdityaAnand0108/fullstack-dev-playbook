@@ -1,6 +1,7 @@
 import Usestate from "./component/Hooks/UseStateSimple.jsx";
 import Card from "./component/Cards.jsx";
 import { useState } from "react";
+import PasswordGenerator from "./component/Hooks/PasswordGenerator.jsx";
 
 function App() {
   const [color, setColor] = useState("white");
@@ -10,6 +11,7 @@ function App() {
       className="text-center text-3xl font-bold w-full min-h-screen flex flex-col items-center justify-center"
       style={{ backgroundColor: color }}
     >
+      <PasswordGenerator />
       <button
         className="bg-red-800 text-white p-6 m-6 rounded-xl"
         onClick={() => setColor("Red")}
