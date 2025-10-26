@@ -57,3 +57,51 @@ console.log(combined)
 
 // Sort Practice:
 // Sort the array [40, 10, 30, 20] in ascending order using a compare function.
+
+// 🧩 10 Medium-Level Array Practice Questions
+
+// Remove Duplicates:
+// Write a function that removes duplicates from [1, 2, 2, 3, 4, 4, 5].
+
+let duplicate = [1, 2, 2, 3, 4, 4, 5];
+let removeDuplicate = [... new Set(duplicate)] ;
+console.log("Removed duplicate : ", removeDuplicate)
+
+// Find Max and Min:
+// Find the largest and smallest numbers in [10, 5, 8, 20, 3] using array methods.
+let max_min = [10, 5, 8, 20, 3]
+console.log(`Max : ${Math.max(...max_min)}`)
+
+// Flatten Nested Array:
+// Convert [1, [2, [3, 4]], 5] into [1, 2, 3, 4, 5].
+
+// Count Frequency:
+// Count how many times each value appears in ['apple', 'banana', 'apple', 'orange'].
+
+// Sum of Even Numbers:
+// Calculate the sum of even numbers from [2, 5, 7, 8, 10] using filter() and reduce().
+
+// Sort Objects by Property:
+// Sort an array of objects by age:
+
+// [{name:'A', age:30}, {name:'B', age:25}, {name:'C', age:28}]
+
+
+// Merge Arrays of Objects:
+// Merge:
+
+// [{id:1, name:'Aditya'}, {id:2, name:'Rahul'}]
+// [{id:1, city:'Mumbai'}, {id:2, city:'Delhi'}]
+
+
+// into one combined array of objects.
+
+// Extract Unique Values from Nested Arrays:
+// From [[1, 2], [2, 3], [3, 4]], get a unique array [1,2,3,4].
+
+// Check All Elements Greater Than 10:
+// Use every() to verify if all elements in [12, 15, 9, 20] are greater than 10.
+
+// Transform Array of Strings:
+// From ['apple', 'banana'], create an array of objects:
+// [{fruit: 'apple'}, {fruit: 'banana'}].
