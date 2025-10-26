@@ -43,6 +43,11 @@ console.log(f.reduce((acc, val) => acc + val, 0))
 
 // Concat Practice:
 // Combine two arrays [1, 2] and [3, 4] into one using both concat() and the spread operator.
+let g = [1, 2];
+let h = [3, 4];
+
+let combined = [...g, ...h, ...a];
+console.log(combined)
 
 // Destructuring Practice:
 // Extract the first and second items from ['apple', 'banana', 'cherry'] using array destructuring.
