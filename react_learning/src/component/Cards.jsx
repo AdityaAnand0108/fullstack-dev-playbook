@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { UserContext } from "./Hooks/UseContext.jsx";
 
 function Card() {
-  const {user} = useContext(UserContext);
+  const { user } = useContext(UserContext);
   return (
     <div className="relative max-w-lg p-8 border border-gray-100 bg-black shadow-xl rounded-xl">
       <span className="absolute right-4 top-4 rounded-full px-3 py-1.5 bg-green-100 text-green-600 font-medium text-xs">
@@ -27,12 +27,10 @@ function Card() {
 
         <h5 className="mt-4 text-xl font-bold text-gray-300">{user.name}</h5>
 
-        <p className="mt-2 text-sm">
-          {user.profession}
-        </p>
+        <p className="mt-2 text-sm">{user.profession}</p>
       </div>
     </div>
-  )
+  );
 }
 
 export default Card;
