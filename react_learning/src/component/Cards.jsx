@@ -1,4 +1,8 @@
-function Card({username, introduction}) {
+import { useContext } from "react";
+import { UserContext } from "./Hooks/UseContext";
+
+function Card() {
+  const username = useContext(UserContext);
   return (
     <div className="relative max-w-lg p-8 border border-gray-100 bg-black shadow-xl rounded-xl">
       <span className="absolute right-4 top-4 rounded-full px-3 py-1.5 bg-green-100 text-green-600 font-medium text-xs">
@@ -24,7 +28,7 @@ function Card({username, introduction}) {
         <h5 className="mt-4 text-xl font-bold text-gray-300">{username}</h5>
 
         <p className="mt-2 text-sm">
-          {introduction}
+          Hey it is me
         </p>
       </div>
     </div>
