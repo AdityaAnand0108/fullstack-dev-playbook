@@ -51,3 +51,18 @@ output = input.filter((c) => c.length > 4);
 
 console.log("Names starting with letter A:", output);
 
+// 🧩 Filter students who scored ≥ 80 AND are from "Science" stream
+
+// Input:
+
+const students = [
+  { name: "Aman", stream: "Science", marks: 85 },
+  { name: "Riya", stream: "Commerce", marks: 90 },
+  { name: "Rohit", stream: "Science", marks: 72 },
+  { name: "Asha", stream: "Science", marks: 91 }
+];
+
+output = students.filter((student) => student.marks >= 80 && student.stream == "Science")
+console.log("students who scored ≥ 80 AND are from Science stream:", output);
+
+
