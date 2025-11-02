@@ -5,7 +5,6 @@ import WelcomeCard from "./WelcomeCard";
 
 function Button() {
   const { logged, display, setDisplay} = useContext(UserContext);
-  console.log("display: ", display);
   return (
     <>
       <button

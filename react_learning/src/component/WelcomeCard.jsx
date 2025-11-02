@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
 import { UserContext } from './Hooks/UseContext'
+import Button from './Button'
 
 function WelcomeCard() {
-  const {user, logged, display, setDisplay} = useContext(UserContext)
+  const {user, display} = useContext(UserContext)
 
   console.log("user -> ", user)
   return (
@@ -21,12 +22,7 @@ function WelcomeCard() {
           {user.profession ?  user.profession : "We're glad to see you. Please continue on Login button to Enter the detail." }
         </p>
 
-        <button
-          className="w-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white py-2 rounded-lg font-semibold hover:opacity-90 transition active:scale-95"
-          onClick={() => {setDisplay(!display)}}
-        >
-          {logged ? "LOGOUT" : "LOGIN"}
-        </button>
+        < Button />
       </div>
       {display && <Login />}
     </div>
