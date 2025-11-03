@@ -49,9 +49,9 @@ input = [
   { name: "Aman", salary: 5000 },
   { name: "Riya", salary: 7000 },
 ];
-output = input.map(employee => ({
+output = input.map((employee) => ({
   ...employee,
-  salary: employee.salary + 1000
+  salary: employee.salary + 1000,
 }));
 console.log("Increase each salary by 1000 : ", output);
 
@@ -61,5 +61,80 @@ input = [
   { name: "Aman", salary: 5000 },
   { name: "Riya", salary: 7000 },
 ];
-output = input.map(employee => (employee.name));
+output = input.map((employee) => employee.name);
 console.log("Extract only names from objects : ", output);
+
+// 1️⃣ Full Name Mapping
+input = [
+  { first: "Aman", last: "Kumar" },
+  { first: "Riya", last: "Sharma" },
+];
+output = input.map((employee) => employee.first + employee.last);
+console.log("Full Name Mapping : ", output);
+
+// 2️⃣ Grades Based on Marks
+input = [95, 82, 67, 74];
+output = input.map((input) => {
+  if (input >= 90) return "A";
+  if (input >= 75) return "B";
+  else return "C";
+});
+console.log("Grades Based on Marks : ", output);
+
+// 3️⃣ String + Length Object
+input = ["React", "JavaScript", "HTML"];
+output = input.map((input) => ({
+  Word: input,
+  length: input.length,
+}));
+console.log("String + Length Object : ", output);
+
+// 4️⃣ Add Index to Names
+input = ["Aman", "Riya", "John"];
+let count = 0;
+output = input.map((input) => input + "-" + count++);
+console.log("String + Length Object : ", output);
+
+// 5️⃣ Format Date from Timestamps
+input = [1672531200000, 1672617600000];
+output = input.map((input) => new Date(input).toLocaleDateString());
+console.log("Format Date from Timestamps : ", output);
+
+// 6️⃣ Assign ID to Each User
+input = [{ name: "Aman" }, { name: "Riya" }, { name: "John" }];
+count = 0;
+output = input.map((input) => ({
+  id: ++count,
+  ...input,
+}));
+console.log("Assign ID to Each User : ", output);
+
+// 7️⃣ Map Numbers → "even"/"odd"
+input = [1, 2, 3, 4, 5];
+output = input.map((input) => {
+  if (input % 2 == 0) return "even";
+  else return "odd";
+});
+console.log("Map Numbers → even/odd : ", output);
+
+// 8️⃣ Check Adult or Minor
+input = [
+  { name: "Aman", age: 22 },
+  { name: "Riya", age: 16 },
+];
+output = input.map((input) => ({
+  name: input.name,
+  isAdult: input.age > 18 ? true : false,
+}));
+console.log("Check Adult or Minor : ", output);
+
+// 9️⃣ Calculate Discounted Price
+input = [
+  { item: "Laptop", price: 50000 },
+  { item: "Phone", price: 20000 },
+];
+output = input.map((input) => ({
+  ...input,
+  price: input.price - (input.price * 10) / 100,
+}));
+console.log("Calculate Discounted Price : ", output);
