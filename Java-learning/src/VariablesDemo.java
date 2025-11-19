@@ -1,4 +1,4 @@
-public class Variables {
+public class VariablesDemo {
 
     String firstName= "Aditya  "; // Instance Variable - Each object of the class has its own copy.
 
@@ -21,8 +21,8 @@ public class Variables {
     }
 
     public static void main(String[] args) {
-        Variables obj = new Variables();
-        Variables obj2 = new Variables();
+        VariablesDemo obj = new VariablesDemo();
+        VariablesDemo obj2 = new VariablesDemo();
         obj.displayName();
         obj2.displayName2();
     }

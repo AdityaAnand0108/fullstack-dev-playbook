@@ -19,7 +19,7 @@
  * Uses a loop to re-run the program until the user enters -1.
  */
 
-public class ControlStatement {
+public class ControlStatementDemo {
     public static void studentGrade(int marks){
         String Grade ;
         if( marks >=90 ){ Grade ="A";}
@@ -30,7 +30,7 @@ public class ControlStatement {
 
         System.out.println("Grade is "+Grade);
         System.out.println(marks > 40 ? "Student is Passed" : "Student is Failed");
-        ControlStatement.studentRemark(Grade);
+        ControlStatementDemo.studentRemark(Grade);
     }
 
     public static void studentRemark(String grade){
@@ -52,6 +52,6 @@ public class ControlStatement {
     }
 
     public static void main (String[] args) {
-        ControlStatement.studentGrade(68);
+        ControlStatementDemo.studentGrade(68);
     }
 }

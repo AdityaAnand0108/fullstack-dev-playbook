@@ -1,4 +1,4 @@
-public class Loops {
+public class LoopsDemo {
     public static void main(String[] args) {
         int[] num = {1, 2, 3, 8, 7, 4 };
 
@@ -19,5 +19,5 @@ public class Loops {
             System.out.print(n + " ");
         }
 
-    }
+}
 }
