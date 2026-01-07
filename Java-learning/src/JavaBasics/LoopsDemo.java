@@ -1,23 +1,25 @@
+package JavaBasics;
+
 public class LoopsDemo {
     public static void main(String[] args) {
-        int[] num = {1, 2, 3, 8, 7, 4 };
+        int[] num = { 1, 2, 3, 8, 7, 4 };
 
-        //for loop
-        for(int i = 0; i < num.length; i++){
+        // for loop
+        for (int i = 0; i < num.length; i++) {
             System.out.print(num[i] + " ");
         }
 
         // while loop
-        int i = 0 ;
-        while(i < num.length){
+        int i = 0;
+        while (i < num.length) {
             System.out.print(num[i] + " ");
             i++;
         }
 
         // for each loop
-        for ( int n : num ) {
+        for (int n : num) {
             System.out.print(n + " ");
         }
 
-}
+    }
 }

@@ -1,6 +1,9 @@
+package JavaBasics;
+
 public class MethodsDemo {
 
-    // Abstract Method Example: classA defines the contract (abstract method) that classB must implement.
+    // Abstract Method Example: classA defines the contract (abstract method) that
+    // classB must implement.
 
     abstract class classA {
         abstract void methodA();
@@ -13,12 +16,13 @@ public class MethodsDemo {
         }
     }
 
-    // Static Method Example: This method belongs to the class and can be called without an instance.
+    // Static Method Example: This method belongs to the class and can be called
+    // without an instance.
     static void methodB() {
         System.out.println("methodB called static");
     }
 
-    public static  void main(String[] args) {
+    public static void main(String[] args) {
         MethodsDemo md = new MethodsDemo();
 
         md.new classB().methodA();
