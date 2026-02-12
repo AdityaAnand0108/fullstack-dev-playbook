@@ -1,5 +1,7 @@
 package Java8;
 
+import jdk.dynalink.Operation;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -7,7 +9,7 @@ import java.util.function.*;
 
 public class LambdaExpression {
 
-    public void add (int a, int b){
+    public static void add(int a, int b){
         System.out.println(a+b);
     }
 
@@ -69,7 +71,7 @@ public class LambdaExpression {
         System.out.println(list1);
 
         LambdaExpression lambdaExpression = new LambdaExpression();
-        System.out.println(lambdaExpression::add(4,5));
+
 
 
 
